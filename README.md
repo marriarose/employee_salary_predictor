@@ -1,133 +1,121 @@
 
-
-
 # 💼 **Internship Project Report**
 
-## 🌟 **Project Title**
+# 🌟 Employee Salary Prediction System
 
-### **Employee Salary Prediction System**
-
----
-
-## 🎓 **Internship Details**
-
-* **Internship Program:** **IBM SkillsBuild Virtual Internship**
-* **Supported by:** **Edunet Foundation**
-* **Platform:** **IBM SkillsBuild**
-* **Duration:** **6 Weeks (June 18, 2025 – July 30, 2025)**
-* **Domain:** **Artificial Intelligence & Machine Learning**
-* **Intern:** **Durga Prasad Papugani**
+An end-to-end machine learning web application that predicts employee salaries based on experience, education, job role, and other features. Built using Python, Streamlit, and deployed to the cloud.
 
 ---
 
-## ✨ **Objective of the Project**
+## 🎓 Internship Details
 
-**To build a smart and interactive web application that predicts employee salaries** based on key factors such as experience, education, skills, and job role.
-The app aims to assist HR teams and employers in making **data-driven compensation decisions** using ML models and dashboards.
-
----
-
-## ⚡ **What I Built**
-
-An end-to-end **Streamlit-based ML application** featuring:
-
-* 🔍 **Real-time salary prediction** using multiple ML models
-* 🧼 **Complete data preprocessing** pipeline (cleaning, encoding, scaling)
-* 📈 **Model evaluation:** R², RMSE, MAE, CV scores
-* 🗓 **Trend analysis** based on date/time features
-* 📊 **Box plots, Violin plots, Outlier detection**
-* 🧪 **Statistical testing** (T-tests, correlation heatmaps)
-* 📅 **PDF report generation** with predicted results
+- **Internship Program:** IBM SkillsBuild Virtual Internship  
+- **Supported by:** Edunet Foundation  
+- **Platform:** IBM SkillsBuild  
+- **Duration:** 6 Weeks (June 18, 2025 – July 30, 2025)  
+- **Domain:** Artificial Intelligence & Machine Learning  
+- **Intern:** Marria Rose K B  
 
 ---
 
-## 🤖 **Machine Learning Models Used**
+## ✨ Objective
 
-* **Linear Regression**
-* **Random Forest Regressor**
-* **XGBoost Regressor**
-* **GridSearchCV** (for model tuning)
-* **K-Fold Cross Validation** (for robustness)
+To develop an intelligent and interactive salary prediction system that supports HR and recruitment teams in making data-driven compensation decisions. The model uses machine learning algorithms and a clean UI for predictions and data analysis.
 
 ---
 
-## 📁 **Dataset Info**
+## ⚡ Features
 
-* **Dataset Name:** `EMPLOYEE_DATASET`
-* **Source:** **Kaggle**
-* **Size:** **500+ rows**
-* **Key Features:** Department, Education, KPIs, Experience, Number of Workers, Target Productivity (used as salary proxy)
-* **Preprocessing:** Outlier removal, encoding, feature scaling, date parsing
-
----
-
-## 🗂️ **Tools & Technologies Used**
-
-* **Frontend:** Streamlit, CSS, HTML
-* **Backend/ML:** Python, Pandas, Scikit-learn, XGBoost, SHAP
-* **Visualization:** Matplotlib, Seaborn, Plotly
-* **PDF/Resume:** PyMuPDF, FPDF, Regex
+- 🔍 Real-time salary prediction using ML models  
+- 🧼 Complete data preprocessing pipeline (cleaning, encoding, scaling)  
+- 📈 Model evaluation metrics: R², RMSE, MAE, CV scores  
+- 📊 Data visualization (box plots, violin plots, heatmaps)  
+- 🧪 Statistical analysis (T-tests, correlations)  
+- 🗓 Trend analysis with date/time features  
+- 📅 PDF report generation of predicted results  
+- 🌐 Deployed using Streamlit Cloud  
 
 ---
 
-## 🎯 **Achievements**
+## 🤖 Machine Learning Models
 
-* ✅ **Deployed a complete ML web app from scratch**
-* 📋 **PDF report generation for predictions**
-* 💡 **Designed a clean and user-friendly UI**
-* 🧠 **Tuned and validated models with proper evaluation**
-* ☁️ **Deployed the project to Streamlit Cloud**
-
----
-
-## 🌍 **Live Demo**
-
-🔗 (https://smartsalarypredictor.onrender.com/about-tech)](https://smartsalarypredictor.onrender.com/)
+- Linear Regression  
+- Random Forest Regressor  
+- XGBoost Regressor  
+- GridSearchCV for model tuning  
+- K-Fold Cross Validation for robustness  
 
 ---
 
-## 👨‍💼 **My Role**
+## 📁 Dataset Information
 
-* Designed the overall system and workflows
-* Handled all data preprocessing and model training
-* Developed frontend and backend logic
-* Built dashboards and PDF generator
-* Managed deployment and UI styling
-
----
-
-## 📚 **What I Learned**
-
-* **Building and deploying ML apps end-to-end**
-* **Real-world data preprocessing and feature engineering**
-* **Data visualization and statistical analysis**
-* **Importance of user experience in AI tools**
+- **Name:** EMPLOYEE_DATASET  
+- **Source:** [Kaggle](https://www.kaggle.com/)  
+- **Size:** 500+ rows  
+- **Key Features:** Department, Education, KPIs, Experience, Team Size, Target Productivity  
+- **Preprocessing:** Outlier removal, feature encoding, scaling, date parsing  
 
 ---
 
-## 🏅 **Internship Completion**
+## 🛠️ Tools & Technologies
 
-* **Certificate:** Issued via **IBM SkillsBuild** & **Edunet Foundation**
+- **Frontend:** Streamlit, HTML, CSS  
+- **Backend & ML:** Python, Pandas, Scikit-learn, XGBoost, SHAP  
+- **Visualization:** Matplotlib, Seaborn, Plotly  
+- **PDF & Resume Parsing:** PyMuPDF, FPDF, Regex  
 
 ---
 
-## 🛠️ **Source Code**
+
+## 🎯 Achievements
+
+- ✅ Deployed a full-stack ML web app  
+- 📋 PDF generation for predicted salary reports  
+- 💡 Designed an intuitive and responsive user interface  
+- 🧠 Validated and tuned models with cross-validation  
+- ☁️ Successfully hosted the application online  
+
+---
+
+## 🌍 Live Demo
+
+🔗 ()
+
+---
+
+## 👩‍💻 My Role
+
+- System design and architecture  
+- Data preprocessing and feature engineering  
+- Model selection and training  
+- Frontend/backend development  
+- Dashboard and PDF generation  
+- Deployment and UI optimization  
+
+---
+
+## 📚 What I Learned
+
+- Building and deploying end-to-end ML apps  
+- Handling real-world datasets and feature engineering  
+- Data visualization and model explainability  
+- Importance of UX in AI-based applications  
+
+---
+
+## 🏅 Certificate
+
+Issued jointly by **IBM SkillsBuild** and **Edunet Foundation**
+
+---
+
+## 🛠️ Source Code
+
+Clone the repository:
 
 ```bash
-git clone [https://github.com/DurgaPrasadPapugani/employee-salary-app.git](https://github.com/DurgA-5/SalaryPredictor.git)
-```
+git clone https://github.com/marriarose/employee_salary_predictor.git
 
----
-
-## 🔮 **Future Enhancements**
-
-**Work In Progress - Employee Salary Prediction through Machine Learning deployment through Streamlit [https://employeepredictor.streamlit.app/ ]View App**
-
-**Planned - ChatBot SmartSalaryPredictor**
-
-**Researching - Expansion to international markets data set (US, UK, Canada).**
-
----
 
 ## 🙌 **Acknowledgements**
 
@@ -143,7 +131,6 @@ This project helped enhance my **AI/ML, software engineering**, and **deployment
 * **Topics:** Salary Prediction, ML Deployment, Resume Parsing, Explainable AI
 
 ---
-
 
 * 📸 Screenshots
 <img width="2000" height="933" alt="image" src="https://github.com/user-attachments/assets/79de9225-5bb1-43d6-abc4-4dc690412bc6" />
