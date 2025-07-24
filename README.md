@@ -116,6 +116,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/marriarose/employee_salary_predictor.git
 
+```
 
 ## 🙌 **Acknowledgements**
 
