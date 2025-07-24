@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1a2236;
+      --secondary: #ff6a3d;
+      --bg: #f5f6fa;
+      --card-bg: #fff;
+      --text: #22223b;
+      --muted: #6c6f7d;
+      --border: #e5e7eb;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(30,34,90,0.08);
+      --font-main: 'Inter', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 0;
+      box-shadow: var(--shadow);
+    }
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 20px;
+    }
+    .nav-logo {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .nav-links a.active, .nav-links a:hover {
+      color: var(--secondary);
+    }
+    .hero {
+      max-width: 1100px;
+      margin: 48px auto 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+    .hero-content {
+      flex: 1 1 350px;
+    }
+    .hero-title {
+      font-size: 2.7rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--primary);
+    }
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .hero-btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(255,106,61,0.08);
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .hero-btn:hover {
+      background: #ff4a1a;
+    }
+    .hero-img {
+      flex: 1 1 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-img img {
+      max-width: 340px;
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .section {
+      max-width: 1100px;
+      margin: 64px auto 0 auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px 24px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .card-icon {
+      font-size: 2.2rem;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+    footer {
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      margin-top: 64px;
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        gap: 32px;
+      }
+      .hero-img {
+        justify-content: flex-start;
+      }
+    }
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 10px;
+      }
+      .hero {
+        padding: 0 10px;
+      }
+      .section {
+        padding: 0 10px;
+      }
+      .card-list {
+        gap: 18px;
+      }
+      .card {
+        padding: 20px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="nav-logo">Home</a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="{{ url_for('predict_form') }}">Predict</a></li>
+        <li><a href="{{ url_for('about_tech') }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to the Salary Predictor</h1>
+        <p class="hero-desc">Get instant salary predictions based on your profile. Enter your details and discover your earning potential. No AI branding, just a clean, modern experience.</p>
+        <a href="{{ url_for('predict_form') }}" class="hero-btn">Get Started</a>
+      </div>
+      <div class="hero-img">
+        <img src="/static/images/a.png" alt="Salary Prediction" />
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">How It Works</h2>
+      <div class="card-list">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-user"></i></div>
+          <div class="card-title">Enter Your Details</div>
+          <div class="card-desc">Fill out a simple form with your experience, education, and job info.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-calculator"></i></div>
+          <div class="card-title">Get a Prediction</div>
+          <div class="card-desc">Receive an instant salary estimate based on your profile.</div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-file-download"></i></div>
+          <div class="card-title">Download Report</div>
+          <div class="card-desc">Download a PDF report of your prediction for your records.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2024 Marria Rose K B. All rights reserved.
+  </footer>
+</body>
+</html>
