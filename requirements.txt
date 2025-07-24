@@ -1,0 +1,15 @@
+Flask
+joblib
+numpy
+pandas
+scikit-learn
+fpdf
+xgboost
+matplotlib
+gunicorn
+notebook
+reportlab
+seaborn
+plotly
+shap
+PyMuPDF
